@@ -1,12 +1,32 @@
 {
-    "Gladiator": {
-        "year": 2000,
-        "rating": 9.1,
-        "poster": "https://link-to-poster.jpg"
-    },
     "The Shawshank Redemption": {
         "year": "1994",
         "rating": 9.2,
         "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "5": {
+        "year": "2011",
+        "rating": 5.9,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTgyOTExNDc1M15BMl5BanBnXkFtZTcwMDA0MTA4NQ@@._V1_SX300.jpg"
+    },
+    "The Godfather": {
+        "year": "1972",
+        "rating": 9.2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BYTJkNGQyZDgtZDQ0NC00MDM0LWEzZWQtYzUzZDEwMDljZWNjXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "The Dark Knight": {
+        "year": "2008",
+        "rating": 9.0,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
+    },
+    "The Godfather Part II": {
+        "year": "1974",
+        "rating": 9.0,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzc1OWY5MjktZDllMi00ZDEzLWEwMGItYjk1YmRhYjBjNTVlXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    "12 Angry Men": {
+        "year": "1957",
+        "rating": 9.0,
+        "poster": "https://m.media-amazon.com/images/M/MV5BYjE4NzdmOTYtYjc5Yi00YzBiLWEzNDEtNTgxZGQ2MWVkN2NiXkEyXkFqcGc@._V1_SX300.jpg"
     }
 }

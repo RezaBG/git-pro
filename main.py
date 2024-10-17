@@ -1,9 +1,7 @@
-# main.py
 import requests
 from storage.storage_json import StorageJson
 
-# Using your OMDb API key
-OMDB_API_KEY = "7428de20"  # Your API key
+OMDB_API_KEY = "7428de20"
 
 class MovieApp:
     def __init__(self, storage):
@@ -58,14 +56,11 @@ class MovieApp:
     def generate_website(self):
         """Generates an HTML website for the movie collection."""
         try:
-            # Read the template file
             with open('static/index_template.html', 'r') as template_file:
                 template_content = template_file.read()
 
-            # Replace the title placeholder
             template_content = template_content.replace("__TEMPLATE_TITLE__", "My Movie App")
 
-            # Generate the movie grid HTML
             movies = self.storage.list_movies()
             movie_grid_html = ""
             for title, info in movies.items():
@@ -77,10 +72,13 @@ class MovieApp:
                 </div>
                 """
 
-            # Replace the movie grid placeholder
             template_content = template_content.replace("__TEMPLATE_MOVIE_GRID__", movie_grid_html)
 
-            # Write the generated HTML to the index.html file
+            template_content = template_content.replace(
+                '<link rel="stylesheet" href="style.css">',
+                '<link rel="stylesheet" href="static/style.css">'
+            )
+
             with open('index.html', 'w') as output_file:
                 output_file.write(template_content)
 
@@ -97,7 +95,7 @@ class MovieApp:
             print("2. Add a movie")
             print("3. Delete a movie")
             print("4. Update a movie")
-            print("5. Generate website")  # New option for generating the website
+            print("5. Generate website")
             choice = input("Enter choice (0-5): ")
             if choice == "0":
                 break
@@ -110,11 +108,12 @@ class MovieApp:
             elif choice == "4":
                 self.update_movie()
             elif choice == "5":
-                self.generate_website()  # Call the generate website function
+                self.generate_website()
             else:
                 print("Invalid choice")
 
 if __name__ == "__main__":
-    storage = StorageJson()  # You can later switch to StorageCsv if needed
+    storage = StorageJson()
+    # storage = StorageCsv()
     app = MovieApp(storage)
     app.run()
