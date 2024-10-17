@@ -1,0 +1,12 @@
+{
+    "Gladiator": {
+        "year": 2000,
+        "rating": 9.1,
+        "poster": "https://link-to-poster.jpg"
+    },
+    "The Shawshank Redemption": {
+        "year": "1994",
+        "rating": 9.2,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_SX300.jpg"
+    }
+}
